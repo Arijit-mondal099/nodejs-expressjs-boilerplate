@@ -1,0 +1,62 @@
+# Dependencies (rebuilt inside the image)
+node_modules
+.pnpm-store
+
+# Build output (rebuilt inside the image)
+dist
+build
+*.tsbuildinfo
+
+# Git
+.git
+.gitignore
+.gitattributes
+
+# Env (passed at runtime, not baked in)
+.env
+.env.*
+!.env.example
+
+# Logs
+logs
+*.log
+npm-debug.log*
+pnpm-debug.log*
+
+# Tests & coverage (not needed in production image)
+tests
+coverage
+.nyc_output
+*.test.ts
+*.spec.ts
+jest.config.ts
+
+# Dev tooling (not needed inside the image)
+.husky
+.vscode
+.idea
+.editorconfig
+.prettierrc
+.prettierignore
+.eslintcache
+eslint.config.js
+commitlint.config.js
+
+# Docker itself
+Dockerfile
+.dockerignore
+docker-compose.yml
+docker-compose.*.yml
+
+# Docs
+README.md
+CLAUDE.md
+*.md
+
+# OS
+.DS_Store
+Thumbs.db
+
+# CI
+.github
+.gitlab-ci.yml
