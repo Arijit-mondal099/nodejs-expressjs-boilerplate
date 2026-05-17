@@ -1,0 +1,12 @@
+services:
+  api:
+    build: .
+    image: api:latest
+    pull_policy: build
+    container_name: api
+    restart: always
+    ports:
+      - "${PORT}:${PORT}"
+    environment:
+      - NODE_ENV=production
+      - PORT=${PORT}
