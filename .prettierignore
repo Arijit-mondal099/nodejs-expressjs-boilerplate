@@ -1,0 +1,42 @@
+# Dependencies
+node_modules/
+.pnpm-store/
+
+# Build output
+dist/
+build/
+*.tsbuildinfo
+
+# Lockfiles (managed by the package manager, not prettier)
+pnpm-lock.yaml
+package-lock.json
+yarn.lock
+
+# Test & coverage
+coverage/
+.nyc_output/
+
+# Caches
+.cache/
+.eslintcache
+.turbo/
+
+# Logs
+logs/
+*.log
+
+# Env (keep formatting decisions to the user)
+.env
+.env.*
+
+# Generated / auto-managed
+public/
+*.min.js
+*.min.css
+
+# Docs that may be auto-generated
+CHANGELOG.md
+
+# OS
+.DS_Store
+Thumbs.db
